@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="448" height="512">
+	<title>check-svg</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3 12.5-12.5 32.8-12.5 45.3 0l105.4 105.3 233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/>
+</svg>

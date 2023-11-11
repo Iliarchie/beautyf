@@ -1,0 +1,136 @@
+.btn-transperent {
+  color: #648864;
+  text-align: center;
+  font-family: Zerno;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 248px;
+  padding: 12px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  border: 1px solid #648864;
+  background-color: transparent;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.btn-transperent:hover {
+  color: #fff;
+  background-color: #648864;
+}
+
+.btn-green {
+  color: #648864;
+  text-align: center;
+  font-family: Zerno;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  padding: 12px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.btn-green:hover {
+  background-color: #648864;
+  color: #fff;
+}
+
+.btn-white {
+  color: #648864;
+  text-align: center;
+  font-family: Zerno;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  padding: 12px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.btn-white:hover {
+  background-color: #d0dbca;
+}
+
+.btn-greenLight {
+  color: #648864;
+  text-align: center;
+  font-family: Zerno;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 200px;
+  padding: 12px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  background-color: #dcedc1;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.btn-greenLight:hover {
+  background-color: #648864;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .btn-green {
+    padding: 12px 0;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .btn-white {
+    padding: 12px 0;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+}
