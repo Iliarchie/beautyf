@@ -1,0 +1,333 @@
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  overflow: none;
+}
+
+.btn-reset {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 0;
+  background-color: #fff;
+  outline: none;
+  background-color: transparent;
+}
+.input-reset::-webkit-search-decoration, .input-reset::-webkit-search-cancel-button, .input-reset::-webkit-search-results-button, .input-reset::-webkit-search-results-decoration {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.select-reset {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+a {
+  -webkit-text-decoration: noen;
+          text-decoration: noen;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #648864;
+  border-radius: 50px;
+}
+
+.page__body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.page__body.active::before {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+
+.checkbox-style {
+  display: inline-block;
+  min-width: 20px;
+  min-height: 20px;
+  border: 2px solid #6b6b6b;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.checkbox-style::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.checkbox-green {
+  display: inline-block;
+  min-width: 20px;
+  min-height: 20px;
+  border: 1px solid #6b6b6b;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.checkbox-green::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/check-white.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  fill: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.checkbox-green::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #648864;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 0;
+  z-index: -1;
+}
+
+.checkbox:checked + .checkbox-style::before {
+  opacity: 1;
+  border: none;
+}
+
+.checkbox:checked + .checkbox-green::before {
+  opacity: 1;
+  border: none;
+}
+
+.checkbox:checked + .checkbox-green::after {
+  opacity: 1;
+  border: none;
+}
+
+.sale-price {
+  color: #648864;
+  font-family: Zerno;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 28px */
+}
+
+.old-price {
+  color: rgba(107, 107, 107, 0.6);
+  font-family: Zerno;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+  text-decoration: line-through;
+}
+
+.card-gift {
+  position: relative;
+}
+.card-gift::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/price.svg);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 64px;
+  top: 10px;
+  left: 10px;
+}
+@media (max-width: 440px) {
+  .card-gift::before {
+    display: none;
+  }
+}
+.card-gift::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/gift-mob.svg);
+  background-repeat: no-repeat;
+  width: 66px;
+  height: 64px;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+@media (max-width: 440px) {
+  .card-gift::after {
+    display: block;
+  }
+}
+
+.card-new::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/new-samll.svg);
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 25.396px;
+  top: 20px;
+  left: 10px;
+  display: block;
+}
+@media (max-width: 440px) {
+  .card-new::before {
+    display: none;
+  }
+}
+.card-new::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/new-mob.svg);
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 25.396px;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+@media (max-width: 440px) {
+  .card-new::after {
+    display: block;
+  }
+}
+
+.card-sale {
+  position: relative;
+}
+.card-sale::before {
+  position: absolute;
+  content: "22%";
+  color: #fff;
+  font-family: Zerno, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 17.25px */
+  border-radius: 6px;
+  background: #648864;
+  width: 60px;
+  padding: 2px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 20px;
+  left: 15px;
+}
+@media (max-width: 440px) {
+  .card-sale::before {
+    font-size: 13px;
+    width: 50px;
+    padding: 3px 0;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.new-card.card-available .new-card__info-available {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new-card.card-close .new-card__info-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
